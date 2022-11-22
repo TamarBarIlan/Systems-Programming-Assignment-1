@@ -17,10 +17,10 @@ libclassrec.a: advancedClassificationRecursion.o basicClassification.o
 	ar -rcs libclassrec.a advancedClassificationRecursion.o basicClassification.o
 
 libclassloops.so: advancedClassificationLoop.o basicClassification.o 
-	gcc -shared -o libclassloops.so advancedClassificationLoop.o basicClassification.o 
+	gcc -shared -fPIC -o libclassloops.so advancedClassificationLoop.o basicClassification.o 
 
 libclassrec.so: advancedClassificationRecursion.o basicClassification.o 
-	gcc -shared -o libclassrec.so advancedClassificationRecursion.o basicClassification.o 
+	gcc -shared -fPIC -o libclassrec.so advancedClassificationRecursion.o basicClassification.o 
 
 main.o: main.c NumClass.h
 	gcc -Wall -g -c main.c -lm
