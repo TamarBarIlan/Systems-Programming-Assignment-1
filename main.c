@@ -7,7 +7,7 @@ The program will print to the screen 4 lines that will contain:
 prime numbers, Armstrong number, strong number ang palindrome number between the 2 numbers.
 */
 
-int main(int a, char *b[]) {
+int main() {
 int start, end;
 scanf("%d", &start);
 scanf("%d", &end);
